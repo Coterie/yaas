@@ -6,9 +6,6 @@ cursor_positions:
   - :path: config/environments/production.rb
     :cursor_offset: 0
     :timestamp: 2012-02-12 18:44:09 +05:30
-  - :path: config/environments/development.rb
-    :cursor_offset: 1449
-    :timestamp: 2012-02-12 19:15:26 +05:30
   - :path: config/application.rb
     :cursor_offset: 357
     :timestamp: 2012-02-12 18:44:09 +05:30
@@ -21,10 +18,13 @@ cursor_positions:
   - :path: app/controllers/application_controller.rb
     :cursor_offset: 0
     :timestamp: 2012-02-12 18:44:09 +05:30
-  - :path: config/routes.rb
-    :cursor_offset: 1482
-    :timestamp: 2012-02-12 19:12:28 +05:30
   - :path: app/views/layouts/application.html.erb
     :cursor_offset: 236
     :timestamp: 2012-02-12 19:11:11 +05:30
+  - :path: config/environments/development.rb
+    :cursor_offset: 0
+    :timestamp: 2012-02-13 22:51:10 +05:30
+  - :path: config/routes.rb
+    :cursor_offset: 955
+    :timestamp: 2012-02-13 22:51:10 +05:30
 files_to_retain: 0

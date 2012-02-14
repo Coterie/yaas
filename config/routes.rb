@@ -1,4 +1,10 @@
 Yaas::Application.routes.draw do
+  resources :posts
+
+  resources :topics
+
+  resources :forums
+
   devise_for :users
 
   get "welcome/index"
