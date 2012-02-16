@@ -11,21 +11,57 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120214182717) do
+ActiveRecord::Schema.define(:version => 20120216180934) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+  end
+
+  add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
+  add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
 
   create_table "forums", :force => true do |t|
-    t.string   "title",      :limit => 50
+    t.string   "title",       :limit => 50
     t.integer  "user_id"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.string   "description"
+  end
+
+  create_table "moderatorships", :force => true do |t|
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "monitorships", :force => true do |t|
+    t.integer  "topic_id"
+    t.integer  "user_id"
+    t.boolean  "active",     :default => true
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
   create_table "posts", :force => true do |t|
     t.integer  "user_id"
     t.integer  "topic_id"
     t.text     "body"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "forum_id"
+    t.datetime "published_at"
   end
 
   add_index "posts", ["topic_id"], :name => "index_posts_on_topic_id"
@@ -35,8 +71,16 @@ ActiveRecord::Schema.define(:version => 20120214182717) do
     t.string   "title"
     t.integer  "forum_id"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+    t.datetime "replied_at"
+    t.integer  "sticky",          :default => 0
+    t.boolean  "locked",          :default => false
+    t.integer  "hits",            :default => 0
+    t.integer  "posts_count",     :default => 0
+    t.integer  "last_user_id"
+    t.integer  "last_post_id"
+    t.datetime "last_updated_at"
   end
 
   add_index "topics", ["forum_id"], :name => "index_topics_on_forum_id"

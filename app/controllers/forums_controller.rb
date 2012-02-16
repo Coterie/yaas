@@ -3,6 +3,7 @@ class ForumsController < ApplicationController
   # GET /forums.json
   def index
     @forums = Forum.all
+    @recent_posts   = current_user.posts.find(:all, :limit => 2, :order => "published_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,9 +15,13 @@ class ForumsController < ApplicationController
   # GET /forums/1.json
   def show
     @forum = Forum.find(params[:id])
-
+    
+    
     respond_to do |format|
-      format.html # show.html.erb
+     
+      format.html do
+         @topics = @forum.topics.paginate :page => current_page
+      end# show.html.erb
       format.json { render json: @forum }
     end
   end

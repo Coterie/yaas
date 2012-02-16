@@ -1,14 +1,24 @@
 Yaas::Application.routes.draw do
-  resources :posts
+  get "monitorships/create"
 
-  resources :topics
+  get "monitorships/destroy"
 
-  resources :forums
+  get "moderatorships/create"
 
+  get "moderatorships/destroy"
+
+  devise_for :admins
   devise_for :users
-
   get "welcome/index"
-
+    
+    resources :moderatorships, :monitorship
+    resources :forums do
+    resources :topics do
+      resources :posts
+      resource :monitorship
+    end
+    resources :posts
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

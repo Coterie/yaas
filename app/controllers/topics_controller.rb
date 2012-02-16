@@ -1,6 +1,7 @@
 class TopicsController < ApplicationController
   # GET /topics
   # GET /topics.json
+  before_filter :find_forum
   def index
     @topics = Topic.all
 
@@ -13,8 +14,10 @@ class TopicsController < ApplicationController
   # GET /topics/1
   # GET /topics/1.json
   def show
+    
     @topic = Topic.find(params[:id])
-
+    @posts = @topic.posts.paginate :page => current_page
+    @post = Post.new
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @topic }
@@ -24,7 +27,8 @@ class TopicsController < ApplicationController
   # GET /topics/new
   # GET /topics/new.json
   def new
-    @topic = Topic.new
+   
+    @topic = @forum.topics.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -44,7 +48,7 @@ class TopicsController < ApplicationController
 
     respond_to do |format|
       if @topic.save
-        format.html { redirect_to @topic, notice: 'Topic was successfully created.' }
+        #format.html { redirect_to @topic, notice: 'Topic was successfully created.' }
         format.json { render json: @topic, status: :created, location: @topic }
       else
         format.html { render action: "new" }
@@ -80,4 +84,9 @@ class TopicsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def find_forum
+      @forum = Forum.find(params[:forum_id])
+    end
+  
 end

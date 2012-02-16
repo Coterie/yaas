@@ -1,0 +1,20 @@
+class AlterStickyAndHitsAndPostsCountAndLastUserIdAndLastPostIdAndLastUpdatedAtToTopics < ActiveRecord::Migration
+      def change 
+    add_column :topics, :sticky, :integer  , default: 0
+
+
+    add_column :topics, :locked, :boolean  , default: false
+ 
+    add_column :topics, :hits, :integer, default: 0  
+ 
+    add_column :topics, :posts_count , :integer,default: 0 
+ 
+    add_column :topics, :last_user_id, :integer
+ 
+    add_column :topics, :last_post_id, :integer 
+ 
+    add_column :topics, :last_updated_at, :datetime 
+ 
+end
+    
+end

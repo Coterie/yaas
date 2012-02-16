@@ -1,3 +1,10 @@
 --- 
 open_files: 
-  - config/routes.rb
+  - app/views/forums/show.html.erb
+  - app/views/forums/index.html.erb
+  - app/models/forum.rb
+  - app/helpers/forums_helper.rb
+  - app/models/post.rb
+  - app/models/topic.rb
+  - app/controllers/forums_controller.rb
+  - app/models/user.rb

@@ -41,3 +41,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 #To use devise (authentication system)
 gem 'devise'
+
+#To use will paginate
+gem 'will_paginate'
