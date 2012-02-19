@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<%if false%>
   <title>Yaas</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -11,13 +9,62 @@
 <p class="alert"><%= alert %></p>
 
 
-<ul class="hmenu">
-  <%= render 'devise/menu/registration_items' %>
-  <%= render 'devise/menu/login_items' %>
-</ul>
-<%= yield %>
 
+<%= yield %>
+<%end%>
 
 
 </body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Yaas<%#= current_site && current_site.name || I18n.t('txt.beast_title', :default => 'Altered Beast') %><%#= " - " + @page_title if @page_title %></title>
+    <%#= stylesheet_link_tag %w(display captcha) %>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "display", :media => "all" %>
+    <%= stylesheet_link_tag    "captcha", :media => "all" %>
+      
+    <%#= javascript_include_tag %w(prototype effects lowpro rails application), :cache => "beast" %>
+    <%= javascript_include_tag "application"  %>
+     <%= javascript_include_tag "prototype"  %>
+     <%= javascript_include_tag "effects"  %>
+     <%= javascript_include_tag "lowpro"  %>
+     <%= javascript_include_tag "rails"  %>
+    <% @feed_icons.each do |feed| %>
+    <%= auto_discovery_link_tag :atom, feed[:url], :title => "Subscribe to '#{feed[:title]}'" %>
+    <% end if @feed_icons.present? %>
+    <link rel="search" type="application/opensearchdescription+xml" href="http://<%= request.host_with_port %>/open_search.xml" />
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="header">
+      <%#= render "layouts/head" %>
+    </div>
+
+    <div id="container">
+      <div id="content">
+        <%#= flash_messages %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+  <ul class="hmenu">
+  <%= render 'devise/menu/registration_items' %>
+  <%= render 'devise/menu/login_items' %>
+  </ul>
+        <%= yield %>
+      </div>
+
+      <div id="right">
+        <%= yield(:right) %>
+      </div>
+
+      <br style="clear:both;" />
+    </div>
+
+    <div id="footer">
+      <%#= render "layouts/footer" %>
+      <br style="clear:both;" />
+    </div>
+  </body>
 </html>

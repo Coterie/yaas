@@ -1,4 +1,6 @@
-1329417974
+1329636853
+AddActiveToUsers	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120217185818_add_active_to_users.rb	class AddActiveToUsers 
+AddAdminToUsers	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120217184556_add_admin_to_users.rb	class AddAdminToUsers 
 AddDescriptionToForums	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215171956_add_description_to_forums.rb	class AddDescriptionToForums 
 AddForumIdToPosts	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215181538_add_forum_id_to_posts.rb	class AddForumIdToPosts 
 AddPostIdToForums	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215175927_add_post_id_to_forums.rb	class AddPostIdToForums 
@@ -19,6 +21,7 @@ CreatePosts	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120214182717_create
 CreateTopics	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120214182538_create_topics.rb	class CreateTopics 
 DeviseCreateAdmins	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215181938_devise_create_admins.rb	class DeviseCreateAdmins 
 DeviseCreateUsers	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120212140233_devise_create_users.rb	class DeviseCreateUsers 
+Editable	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user/editable.rb	module User::Editable
 Forum	/home/ramasamyz/PlayGround/ROR/yaas/app/models/forum.rb	class Forum 
 ForumTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/forum_test.rb	class ForumTest 
 ForumsController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	class ForumsController 
@@ -27,7 +30,6 @@ ForumsHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/forums_helper.rb	mo
 ForumsHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/forums_helper_test.rb	class ForumsHelperTest 
 Moderatorship	/home/ramasamyz/PlayGround/ROR/yaas/app/models/moderatorship.rb	class Moderatorship 
 ModeratorshipTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/moderatorship_test.rb	class ModeratorshipTest 
-Moderatorships	/home/ramasamyz/PlayGround/ROR/yaas/app/models/moderatorships.rb	class Moderatorships 
 ModeratorshipsController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/moderatorships_controller.rb	class ModeratorshipsController 
 ModeratorshipsControllerTest	/home/ramasamyz/PlayGround/ROR/yaas/test/functional/moderatorships_controller_test.rb	class ModeratorshipsControllerTest 
 ModeratorshipsHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/moderatorships_helper.rb	module ModeratorshipsHelper
@@ -35,7 +37,6 @@ ModeratorshipsHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/m
 ModeratorshipsTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/moderatorships_test.rb	class ModeratorshipsTest 
 Monitorship	/home/ramasamyz/PlayGround/ROR/yaas/app/models/monitorship.rb	class Monitorship 
 MonitorshipTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/monitorship_test.rb	class MonitorshipTest 
-Monitorships	/home/ramasamyz/PlayGround/ROR/yaas/app/models/monitorships.rb	class Monitorships 
 MonitorshipsController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/monitorships_controller.rb	class MonitorshipsController 
 MonitorshipsControllerTest	/home/ramasamyz/PlayGround/ROR/yaas/test/functional/monitorships_controller_test.rb	class MonitorshipsControllerTest 
 MonitorshipsHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/monitorships_helper.rb	module MonitorshipsHelper
@@ -43,12 +44,14 @@ MonitorshipsHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/mon
 MonitorshipsTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/monitorships_test.rb	class MonitorshipsTest 
 Post	/home/ramasamyz/PlayGround/ROR/yaas/app/models/post.rb	class Post 
 PostTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/post_test.rb	class PostTest 
+Posting	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user/posting.rb	module User::Posting
 PostsController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	class PostsController 
 PostsControllerTest	/home/ramasamyz/PlayGround/ROR/yaas/test/functional/posts_controller_test.rb	class PostsControllerTest 
 PostsHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/posts_helper.rb	module PostsHelper
 PostsHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/posts_helper_test.rb	class PostsHelperTest 
 RemovePostIdToForums	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120216050332_remove_post_id_to_forums.rb	class RemovePostIdToForums 
 RemoveRepliedAtToPosts	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215191506_remove_replied_at_to_posts.rb	class RemoveRepliedAtToPosts 
+Str	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function Str(key, holder, stack)
 TestCase	/home/ramasamyz/PlayGround/ROR/yaas/test/test_helper.rb	class ActiveSupport::TestCase
 Topic	/home/ramasamyz/PlayGround/ROR/yaas/app/models/topic.rb	class Topic 
 TopicTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/topic_test.rb	class TopicTest 
@@ -56,14 +59,34 @@ TopicsController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_cont
 TopicsControllerTest	/home/ramasamyz/PlayGround/ROR/yaas/test/functional/topics_controller_test.rb	class TopicsControllerTest 
 TopicsHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/topics_helper.rb	module TopicsHelper
 TopicsHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/topics_helper_test.rb	class TopicsHelperTest 
+Type	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function Type(o)
 User	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user.rb	class User 
 UserTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/user_test.rb	class UserTest 
+UsersController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	class UsersController 
+UsersControllerTest	/home/ramasamyz/PlayGround/ROR/yaas/test/functional/users_controller_test.rb	class UsersControllerTest 
+UsersHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/users_helper.rb	module UsersHelper
+UsersHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/users_helper_test.rb	class UsersHelperTest 
 WelcomeController	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/welcome_controller.rb	class WelcomeController 
 WelcomeControllerTest	/home/ramasamyz/PlayGround/ROR/yaas/test/functional/welcome_controller_test.rb	class WelcomeControllerTest 
 WelcomeHelper	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/welcome_helper.rb	module WelcomeHelper
 WelcomeHelperTest	/home/ramasamyz/PlayGround/ROR/yaas/test/unit/helpers/welcome_helper_test.rb	class WelcomeHelperTest 
 Yaas	/home/ramasamyz/PlayGround/ROR/yaas/config/application.rb	module Yaas
+abs	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function abs()
+absolutize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function absolutize(element)
+addMethods	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function addMethods(source)
+addText	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/controls.js	function addText(mode, condition)
 ajax_spinner_for	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/application_helper.rb	   def ajax_spinner_for(id, spinner="spinner.gif")
+all	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function all(iterator, context)
+any	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function any(iterator, context)
+argumentNames	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function argumentNames()
+avatar_for	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/application_helper.rb	    def avatar_for(user, size=32)
+bind	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function bind(context)
+bindAsEventListener	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function bindAsEventListener(context)
+blank	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function blank()
+body	/home/ramasamyz/PlayGround/ROR/yaas/app/models/topic.rb	attr_accessor :body
+camelize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function camelize()
+capitalize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function capitalize()
+ceil	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function ceil()
 change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120212140233_devise_create_users.rb	  def change
 change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120214182717_create_posts.rb	  def change
 change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120214182538_create_topics.rb	  def change
@@ -78,44 +101,233 @@ change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215191345_add_replied
 change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120216072127_add_sticky_and_hits_and_posts_count_and_last_user_id_and_last_post_id_and_last_updated_at_to_topics.rb	      def change 
 change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120216180934_create_moderatorships.rb	  def change
 change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120216180913_create_monitorships.rb	  def change
+change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120217184556_add_admin_to_users.rb	  def change
+change	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120217185818_add_active_to_users.rb	  def change
+checkDeficiency	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function checkDeficiency(tagName)
+checkReadyState	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function checkReadyState()
+clear	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function clear()
+clone	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function clone(object)
+clone	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function clone()
+clone	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function clone()
+collect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function collect(iterator, context)
+compact	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function compact()
+concat	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function concat()
+copy	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function copy(methods, destination, onlyIfAbsent)
 create	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def create
 create	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def create
 create	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def create
 create	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/moderatorships_controller.rb	  def create
 create	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/monitorships_controller.rb	  def create
+create	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def create
+create	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function create()
+create_initial_post	/home/ramasamyz/PlayGround/ROR/yaas/app/models/topic.rb	def create_initial_post
+cssNameFor	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function cssNameFor(key)
+cumulativeOffset	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function cumulativeOffset(element)
+cumulativeScrollOffset	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function cumulativeScrollOffset(element)
 current_page	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/application_controller.rb	  def current_page
+curry	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function curry()
+dasherize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function dasherize()
+defer	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function defer()
+define	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function define(D)
+delay	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function delay(timeout)
 destroy	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def destroy
 destroy	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def destroy
 destroy	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def destroy
 destroy	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/moderatorships_controller.rb	  def destroy
 destroy	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/monitorships_controller.rb	  def destroy
+destroy	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def destroy
+detect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function detect(iterator, context)
+dirCheck	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function dirCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
+dirNodeCheck	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function dirNodeCheck( dir, cur, doneName, checkSet, nodeCheck, isXML )
+dispatch	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/effects.js	function dispatch(effect, eventName)
 down	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215191506_remove_replied_at_to_posts.rb	  def down
 down	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120216050332_remove_post_id_to_forums.rb	  def down
+each	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function each(iterator, context)
+each	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function each(iterator)
+eachSlice	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function eachSlice(number, iterator, context)
 edit	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def edit
 edit	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def edit
 edit	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def edit
+edit	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def edit
+editable_by?	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user/editable.rb	  def editable_by?(user, is_moderator = nil)
+element	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function element(event)
+empty	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function empty()
+endsWith	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function endsWith(pattern)
+escapeHTML	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function escapeHTML()
+evalJSON	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function evalJSON(sanitize)
+evalScripts	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function evalScripts()
+extend	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function extend(destination, source)
+extend	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function extend(tagName)
+extendElementWith	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function extendElementWith(element, methods)
+extendElements	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function extendElements(elements)
+extractScripts	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function extractScripts()
+fallback	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/controls.js	function fallback(name, expr)
 feed_icon_tag	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/application_helper.rb	  def feed_icon_tag(title, url)
+find	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function find(elements, expression, index)
+findAll	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function findAll(iterator, context)
+findDOMClass	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function findDOMClass(tagName)
+findElement	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function findElement(event, expression)
 find_forum	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def find_forum
+fire	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function fire(element, eventName, memo, bubble)
+fireContentLoadedEvent	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function fireContentLoadedEvent()
+first	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function first()
+flatten	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function flatten()
+floor	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function floor()
+get	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function get(key)
+getDimensions	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function getDimensions(element)
+getLayout	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function getLayout(element, preCompute)
+getOffsetParent	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function getOffsetParent(element)
+getPixelValue	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function getPixelValue(value, property)
+getRootElement	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function getRootElement()
+grep	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function grep(filter, iterator, context)
+gsub	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function gsub(pattern, replacement)
+handleMethod	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/rails.js	function handleMethod(element)
+handleRemote	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/rails.js	function handleRemote(element)
+inGroupsOf	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inGroupsOf(number, fillWith)
+include	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function include(pattern)
+include	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function include(object)
+include	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function include(value)
 index	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/welcome_controller.rb	  def index
 index	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def index
 index	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def index
 index	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def index
+index	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def index
+index	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function index(value)
+indexOf	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function indexOf(item, i)
+initialize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function initialize(object)
+initialize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function initialize(start, end, exclusive)
+inject	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inject(memo, iterator, context)
+inspect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inspect(object)
+inspect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inspect(useDoubleQuotes)
+inspect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inspect()
+inspect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inspect()
+inspect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function inspect()
+interpolate	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function interpolate(object, pattern)
+intersect	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function intersect(array)
+invoke	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function invoke(method)
+isArray	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isArray(object)
+isBody	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isBody(element)
+isDetached	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isDetached(element)
+isDisplayed	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isDisplayed(element)
+isElement	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isElement(object)
+isEventSupported	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/rails.js	function isEventSupported(eventName)
+isForm	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/rails.js	function isForm(element)
+isFunction	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isFunction(object)
+isHash	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isHash(object)
+isInput	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/rails.js	function isInput(element)
+isJSON	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isJSON()
+isLeftClick	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isLeftClick(event)   { return _isButton(event, 0)
+isMiddleClick	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isMiddleClick(event) { return _isButton(event, 1)
+isNumber	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isNumber(object)
+isRightClick	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isRightClick(event)  { return _isButton(event, 2)
+isString	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isString(object)
+isUndefined	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function isUndefined(object)
+iter	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function iter(name)
+keys	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function keys(object)
+keys	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function keys()
+klass	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function klass()
+last	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function last()
+lastIndexOf	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function lastIndexOf(item, i)
 last_active	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/application_helper.rb	  def last_active
+last_active	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/forums_helper.rb	  def last_active
 last_page	/home/ramasamyz/PlayGround/ROR/yaas/app/models/topic.rb	def last_page
+match	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function match()
+match	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function match(element, selector)
+max	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function max(iterator, context)
+measure	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function measure(element, property)
+merge	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function merge(array, args)
+merge	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function merge(object)
+methodize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function methodize()
+min	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function min(iterator, context)
+moderatable	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user.rb	    def moderatable
+moderator_of?	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user.rb	  def moderator_of?(forum)
 new	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def new
 new	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def new
 new	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def new
+new	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def new
+observe	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function observe(element, eventName, handler)
+on	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function on(element, eventName, selector, callback)
 paged?	/home/ramasamyz/PlayGround/ROR/yaas/app/models/post.rb	  def paged?
 paged?	/home/ramasamyz/PlayGround/ROR/yaas/app/models/topic.rb	def paged?
+parseColor	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/effects.js	function parseColor(color)
+parseJSON	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function parseJSON()
+partition	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function partition(iterator, context)
+pluck	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function pluck(property)
+pointer	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function pointer(event)
+pointerX	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function pointerX(event)
+pointerY	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function pointerY(event)
+pollDoScroll	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function pollDoScroll()
+positionedOffset	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function positionedOffset(element)
+prepareReplacement	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function prepareReplacement(replacement)
+purgeElement	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function purgeElement(element)
 recent_forum_activity	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/forums_helper.rb	  def recent_forum_activity(forum)
 recent_topic_activity	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/forums_helper.rb	  def recent_topic_activity(topic)
+reject	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function reject(iterator, context)
+relativize	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function relativize(element)
+reply	/home/ramasamyz/PlayGround/ROR/yaas/app/models/user/posting.rb	  def reply(topic, body)
+reverse	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function reverse(inline)
+round	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function round()
+scan	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function scan(pattern, iterator)
+select	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function select()
+select	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function select(selector, scope)
+set	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function set(key, value)
+set_default_attributes	/home/ramasamyz/PlayGround/ROR/yaas/app/models/topic.rb	def set_default_attributes
 show	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def show
 show	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def show
 show	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def show
+show	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def show
+size	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function size()
+size	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function size()
+sortBy	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function sortBy(iterator, context)
+startsWith	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function startsWith(pattern)
+stop	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function stop(event)
+stopObserving	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function stopObserving(element, eventName, handler)
+stringify	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function stringify(object)
+strip	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function strip()
+stripAlpha	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function stripAlpha(filter)
+stripScripts	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function stripScripts()
+stripTags	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function stripTags()
+sub	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function sub(pattern, replacement, count)
+subclass	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function subclass()
+succ	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function succ()
+succ	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function succ()
 test_homepage	/home/ramasamyz/PlayGround/ROR/yaas/test/performance/browsing_test.rb	  def test_homepage
+times	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function times(count)
+times	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function times(iterator, context)
+toArray	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toArray()
+toArray	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toArray()
+toCSSPixels	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toCSSPixels(number)
+toColorPart	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toColorPart()
+toDecimal	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toDecimal(pctString)
+toHTML	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toHTML(object)
+toISOString	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toISOString()
+toJSON	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toJSON(value)
+toJSON	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toJSON()
+toObject	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toObject()
+toPaddedString	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toPaddedString(length, radix)
+toQueryPair	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toQueryPair(key, value)
+toQueryParams	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toQueryParams(separator)
+toQueryString	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toQueryString(object)
+toQueryString	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function toQueryString()
 topic_title_link	/home/ramasamyz/PlayGround/ROR/yaas/app/helpers/application_helper.rb	   def topic_title_link(topic, options) 
+truncate	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function truncate(length, truncation)
+underscore	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function underscore()
+unescapeHTML	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function unescapeHTML()
+unfilterJSON	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function unfilterJSON(filter)
+uniq	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function uniq(sorted)
+unset	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function unset(key)
 up	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120215191506_remove_replied_at_to_posts.rb	  def up
 up	/home/ramasamyz/PlayGround/ROR/yaas/db/migrate/20120216050332_remove_post_id_to_forums.rb	  def up
 update	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/posts_controller.rb	  def update
 update	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/forums_controller.rb	  def update
 update	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/topics_controller.rb	  def update
+update	/home/ramasamyz/PlayGround/ROR/yaas/app/controllers/users_controller.rb	  def update
+update	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function update(array, args)
+update	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function update(object)
+update	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function update(element, content)
+values	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function values(object)
+values	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function values()
+viewportOffset	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function viewportOffset(forElement)
+without	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function without()
+wrap	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function wrap(wrapper)
+zip	/home/ramasamyz/PlayGround/ROR/yaas/app/assets/javascripts/prototype.js	function zip()

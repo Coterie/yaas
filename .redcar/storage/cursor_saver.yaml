@@ -15,16 +15,7 @@ cursor_positions:
   - :path: config/environment.rb
     :cursor_offset: 0
     :timestamp: 2012-02-12 18:44:09 +05:30
-  - :path: app/views/layouts/application.html.erb
-    :cursor_offset: 236
-    :timestamp: 2012-02-12 19:11:11 +05:30
   - :path: config/environments/development.rb
-    :cursor_offset: 0
-    :timestamp: 2012-02-13 22:51:10 +05:30
-  - :path: app/assets/stylesheets/forum.css
-    :cursor_offset: 0
-    :timestamp: 2012-02-16 00:31:27 +05:30
-  - :path: app/assets/stylesheets/application.css
     :cursor_offset: 0
     :timestamp: 2012-02-13 22:51:10 +05:30
   - :path: app/assets/javascripts/welcome.js.coffee
@@ -45,15 +36,6 @@ cursor_positions:
   - :path: app/assets/images/clearbits/comment.gif
     :cursor_offset: 0
     :timestamp: 2012-02-14 23:58:18 +05:30
-  - :path: app/views/forums/new.html.erb
-    :cursor_offset: 0
-    :timestamp: 2012-02-14 23:54:32 +05:30
-  - :path: app/views/forums/edit.html.erb
-    :cursor_offset: 0
-    :timestamp: 2012-02-14 23:54:32 +05:30
-  - :path: app/views/forums/_form.html.erb
-    :cursor_offset: 625
-    :timestamp: 2012-02-16 11:00:13 +05:30
   - :path: app/views/topics/index.html.erb
     :cursor_offset: 0
     :timestamp: 2012-02-14 23:55:39 +05:30
@@ -81,33 +63,112 @@ cursor_positions:
   - :path: config/routes.rb
     :cursor_offset: 236
     :timestamp: 2012-02-16 23:04:25 +05:30
-  - :path: app/controllers/forums_controller.rb
-    :cursor_offset: 553
-    :timestamp: 2012-02-16 12:13:51 +05:30
-  - :path: app/models/topic.rb
-    :cursor_offset: 290
-    :timestamp: 2012-02-16 22:53:28 +05:30
-  - :path: app/models/post.rb
-    :cursor_offset: 116
-    :timestamp: 2012-02-16 13:37:44 +05:30
+  - :path: app/models/user/editable.rb
+    :cursor_offset: 191
+    :timestamp: 2012-02-18 22:48:35 +05:30
+  - :path: app/assets/stylesheets/reset.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/reset-fonts-grids.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/prototip.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/print.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/screen.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/scaffolds.css.scss
+    :cursor_offset: 712
+    :timestamp: 2012-02-14 23:54:32 +05:30
+  - :path: app/assets/stylesheets/posts.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-02-14 23:57:17 +05:30
+  - :path: app/assets/stylesheets/monitorships.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 22:59:20 +05:30
+  - :path: app/assets/stylesheets/moderatorships.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 22:57:36 +05:30
+  - :path: app/assets/stylesheets/lightbox.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/grids.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/fonts.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/views/layouts/_footer.html.erb
+    :cursor_offset: 1272
+    :timestamp: 2012-02-19 00:19:31 +05:30
+  - :path: app/views/layouts/_head.html.erb
+    :cursor_offset: 488
+    :timestamp: 2012-02-19 00:41:43 +05:30
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 956
+    :timestamp: 2012-02-19 00:35:06 +05:30
+  - :path: app/assets/stylesheets/forums.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-02-14 23:54:32 +05:30
+  - :path: app/assets/stylesheets/forum.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-16 00:31:27 +05:30
+  - :path: app/assets/stylesheets/application.css
+    :cursor_offset: 0
+    :timestamp: 2012-02-13 22:51:10 +05:30
+  - :path: app/views/posts/_formatting.html.erb
+    :cursor_offset: 515
+    :timestamp: 2012-02-18 23:19:14 +05:30
+  - :path: app/views/topics/show.html.erb
+    :cursor_offset: 6770
+    :timestamp: 2012-02-18 23:24:14 +05:30
+  - :path: app/assets/stylesheets/topics.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-02-14 23:55:39 +05:30
+  - :path: app/assets/stylesheets/welcome.css.scss
+    :cursor_offset: 0
+    :timestamp: 2012-02-13 22:51:10 +05:30
+  - :path: app/views/forums/show.html.erb
+    :cursor_offset: 327
+    :timestamp: 2012-02-18 23:40:41 +05:30
+  - :path: app/views/forums/index.html.erb
+    :cursor_offset: 3664
+    :timestamp: 2012-02-18 23:55:49 +05:30
+  - :path: app/models/forum.rb
+    :cursor_offset: 270
+    :timestamp: 2012-02-18 23:50:18 +05:30
   - :path: app/helpers/forums_helper.rb
     :cursor_offset: 574
     :timestamp: 2012-02-16 10:58:06 +05:30
-  - :path: app/models/forum.rb
-    :cursor_offset: 241
-    :timestamp: 2012-02-16 22:51:22 +05:30
-  - :path: app/views/forums/index.html.erb
-    :cursor_offset: 1934
-    :timestamp: 2012-02-16 10:41:25 +05:30
+  - :path: app/models/post.rb
+    :cursor_offset: 59
+    :timestamp: 2012-02-18 22:51:59 +05:30
+  - :path: app/models/topic.rb
+    :cursor_offset: 56
+    :timestamp: 2012-02-18 22:51:05 +05:30
+  - :path: app/controllers/forums_controller.rb
+    :cursor_offset: 553
+    :timestamp: 2012-02-16 12:13:51 +05:30
   - :path: app/models/user.rb
-    :cursor_offset: 335
-    :timestamp: 2012-02-16 00:17:45 +05:30
-  - :path: app/views/topics/show.html.erb
-    :cursor_offset: 2166
-    :timestamp: 2012-02-16 23:09:04 +05:30
-  - :path: app/views/forums/show.html.erb
-    :cursor_offset: 3101
-    :timestamp: 2012-02-16 14:01:18 +05:30
-    :selection_offset: 3096
-    :block_selection_mode: false
+    :cursor_offset: 1133
+    :timestamp: 2012-02-18 23:09:04 +05:30
+  - :path: app/views/forums/new.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-02-14 23:54:32 +05:30
+  - :path: app/views/forums/_form.html.erb
+    :cursor_offset: 699
+    :timestamp: 2012-02-19 10:55:13 +05:30
+  - :path: app/views/forums/edit.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-02-14 23:54:32 +05:30
+  - :path: app/helpers/topics_helper.rb
+    :cursor_offset: 0
+    :timestamp: 2012-02-14 23:55:39 +05:30
+  - :path: app/models/user/posting.rb
+    :cursor_offset: 20
+    :timestamp: 2012-02-19 12:31:26 +05:30
 files_to_retain: 0

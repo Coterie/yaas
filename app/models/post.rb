@@ -1,4 +1,7 @@
 class Post < ActiveRecord::Base
+
+include User::Editable  
+
 belongs_to :user 
 belongs_to :topic 
 belongs_to :forum

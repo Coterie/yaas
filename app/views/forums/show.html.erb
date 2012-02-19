@@ -19,20 +19,20 @@
 <%= link_to 'Edit', edit_forum_path(@forum) %> |
 <%= link_to 'Back', forums_path %>
 <%end%>
-
+<%###############################################%>
 <% content_for :right do %>
 
 <% unless @forum.description.blank? %>
 <%= @forum.description %>
 <hr />
 <% end %>
-<% if false%>
+
 <h5 style="margin-bottom:1.0em;"><%= I18n.t 'txt.moderator', :count => @forum.moderators.size, :default => 'Moderator' %></h5>
 
 <% unless @forum.moderators.empty? %>
 <ul class="flat" style="margin-top:1em;">
 <% @forum.moderators.each do |user| %>
-  <li><%= link_to user.display_name || user.login, user %></li>
+  <li><%= link_to user.email || user.login, user %></li>
 <% end %>
 </ul>
 <% else %>
@@ -40,8 +40,6 @@
 <% end %>
 
 <% end %>
-<%end%>
-
 
 <% @page_title = @forum.title %>
 
@@ -121,17 +119,16 @@
     <%= @forum.description %>
     <hr />
   <% end %>
-  <% if false %>
+  
   <h5 style="margin-bottom:1.0em;"><%= t 'txt.moderator', :count => @forum.moderators.size, :default => 'Moderator' %></h5>
   
   <% unless @forum.moderators.empty? -%>
     <ul class="flat" style="margin-top:1em;">
     <% @forum.moderators.each do |user| %>
-      <li><%= link_to h(user.display_name || user.login), user %></li>
+      <li><%= link_to h(user.email || user.login), user %></li>
     <% end %>
     </ul>
   <% else %>
-  <%end%>
     <p><%= t 'txt.views_forums.unmoderated_html', :default => 'This forum is currently unmoderated.<br />Please always be courteous.' %></p>
   <% end %>
 

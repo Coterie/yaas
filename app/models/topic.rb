@@ -1,5 +1,10 @@
 class Topic < ActiveRecord::Base
-  
+ include User::Editable  
+
+attr_accessor :body
+
+before_validation :set_default_attributes, :on => :create
+after_create   :create_initial_post
 
 has_many :posts , dependent: :destroy
 belongs_to :forum
@@ -20,8 +25,15 @@ end
 
 def last_page
     [(posts_count.to_f / Post.per_page.to_f).ceil.to_i, 1].max
-  end
+end
 
+def set_default_attributes
+  self.last_updated_at ||= Time.now.utc
+end
 
+def create_initial_post
+      user.reply self, @body # unless locked?
+      @body = nil
+end
 
 end

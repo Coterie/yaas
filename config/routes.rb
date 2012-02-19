@@ -11,6 +11,8 @@ Yaas::Application.routes.draw do
   devise_for :users
   get "welcome/index"
     
+  resources :users
+
     resources :moderatorships, :monitorship
     resources :forums do
     resources :topics do
